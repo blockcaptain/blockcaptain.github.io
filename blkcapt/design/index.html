@@ -182,8 +182,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../nas/design/" class="md-tabs__link">
-          NAS
+        <a href="../../integration/nas/" class="md-tabs__link">
+          Integration
         </a>
       
     </li>
@@ -324,13 +324,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#related-tools" class="md-nav__link">
-    Related Tools
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#alternative-tools" class="md-nav__link">
     Alternative Tools
   </a>
@@ -427,17 +420,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
-      NAS
+      Integration
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="NAS" data-md-level="1">
+    <nav class="md-nav" aria-label="Integration" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        NAS
+        Integration
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -448,8 +441,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nas/design/" title="Design" class="md-nav__link">
-      Design
+    <a href="../../integration/nas/" title="NAS Distributions" class="md-nav__link">
+      NAS Distributions
     </a>
   </li>
 
@@ -460,44 +453,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nas/getting-started/" title="Getting started" class="md-nav__link">
-      Getting started
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../nas/post-install/" title="Post-Installation" class="md-nav__link">
-      Post-Installation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../nas/system-services/" title="System Services" class="md-nav__link">
-      System Services
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../nas/hosting-services/" title="Hosting Services" class="md-nav__link">
-      Hosting Services
+    <a href="../../integration/ubuntu/" title="Ubuntu" class="md-nav__link">
+      Ubuntu
     </a>
   </li>
 
@@ -580,13 +537,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#related-tools" class="md-nav__link">
-    Related Tools
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#alternative-tools" class="md-nav__link">
     Alternative Tools
   </a>
@@ -637,11 +587,9 @@
                 
                 <p>About the design.</p>
 <h2 id="principles">Principles</h2>
-<p>Be paranoid about data loss. The chance of data loss should be virtually 0%. Everything risk that can be reasonably mitigated should be: e.g. silent data corruption (<a href="https://en.wikipedia.org/wiki/Data_degradation">bitrot</a>), malicious data corruption, complete failure of 1, 2 or all physical disks, an unrecoverable data bug in the cloud backup tool, or forgetting to pay the bill on your cloud storage. </p>
-<h2 id="related-tools">Related Tools</h2>
-<p>ZFS support is in future plans. BlockCaptain should complement <a href="https://github.com/ubuntu/zsys">ZSys</a>. </p>
+<p>Rigerously evaluate and mitigate failures modes which may lead to data loss. The probability of major data loss should be close to 0%. Every risk that can be reasonably mitigated should be: e.g. silent data corruption (<a href="https://en.wikipedia.org/wiki/Data_degradation">bitrot</a>), malicious data corruption, complete failure of 1, 2 or all physical disks, an unrecoverable data bug in the cloud backup tool, or forgetting to pay the bill on your cloud storage. </p>
 <h2 id="alternative-tools">Alternative Tools</h2>
-<p>BlockCaptain has some intersecting functionality with the following tools. These tools are not full alternatives to BlockCaptain, nor is BlockCaptain a superset of any of these tools.</p>
+<p>BlockCaptain has some intersecting functionality with the following tools. These tools are not full alternatives to BlockCaptain, nor is BlockCaptain a superset of these tools.</p>
 <h3 id="btrfs">Btrfs</h3>
 <ul>
 <li><a href="https://github.com/digint/btrbk">btrbk</a> (Perl) - Snapshot management and send/receive snapshots.</li>
@@ -651,7 +599,7 @@
 <li><a href="http://snapper.io/">Snapper</a> (C++) - Snapshot management.</li>
 </ul>
 <h3 id="zfs">ZFS</h3>
-<p>There is no ZFS support in BlockCaptain today. <a href="https://zrepl.github.io/">zrepl</a> is recommended if you need ZFS snapshot management.</p>
+<p>There is no ZFS support in BlockCaptain today. The following tools support ZFS snapshot management.</p>
 <ul>
 <li><a href="https://github.com/yboetz/pyznap">pyznap</a> (Python) - ZFS Snapshot management and send/receive snapshots.</li>
 <li><a href="https://github.com/jimsalterjrs/sanoid">Sanoid</a> (Perl) - ZFS Snapshot management and send/receive snapshots.</li>
